@@ -1,0 +1,47 @@
+.v-loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    gap: 3px;
+}
+
+
+.v-loading1,
+.v-loading2,
+.v-loading3,
+.v-loading4,
+.v-loading5,
+.v-loading6{
+    height: 10px;
+    width: 3px;
+    background: -webkit-linear-gradient(top,red,black,red);
+}
+.v-loading1{
+    animation: v-loading-effect 1s infinite ease-in-out .1s;
+}
+.v-loading2{
+    animation: v-loading-effect 1s infinite ease-in-out .2s;
+}
+.v-loading3{
+    animation: v-loading-effect 1s infinite ease-in-out .3s;
+}
+.v-loading4{
+    animation: v-loading-effect 1s infinite ease-in-out .4s;
+}
+.v-loading5{
+    animation: v-loading-effect 1s infinite ease-in-out .5s;
+}
+.v-loading6{
+    animation: v-loading-effect 1s infinite ease-in-out .6s;
+}
+
+@keyframes v-loading-effect {
+    0%,40%,100%{
+        transform: scaleY(2);
+    }
+    20%{
+        transform: scaleY(1);
+    }
+}
