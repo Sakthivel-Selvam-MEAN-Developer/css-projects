@@ -1,0 +1,44 @@
+.dot-loader{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.dot-loading1,
+.dot-loading2,
+.dot-loading3,
+.dot-loading4,
+.dot-loading5{
+    width: 20px;
+    height: 20px;
+    background: -webkit-linear-gradient(45deg,red,black);
+    border-radius: 100%;
+}
+
+.dot-loading1{
+    animation: dot-loading-effect 1s infinite ease-in-out .2s;
+}
+.dot-loading2{
+    animation: dot-loading-effect 1s infinite ease-in-out .4s;
+}
+.dot-loading3{
+    animation: dot-loading-effect 1s infinite ease-in-out .6s;
+}
+.dot-loading4{
+    animation: dot-loading-effect 1s infinite ease-in-out .8s;
+}
+.dot-loading5{
+    animation: dot-loading-effect 1s infinite ease-in-out 1s;
+}
+
+@keyframes dot-loading-effect {
+    0%,40%,100%{
+        transform: scale(0.4);
+    }
+    20%{
+        transform: scale(1);
+    }
+}
